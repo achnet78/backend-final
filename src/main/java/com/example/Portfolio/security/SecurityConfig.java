@@ -40,6 +40,7 @@ public class SecurityConfig {
         CorsConfiguration configuration = new CorsConfiguration();
         configuration.setAllowedOriginPatterns(Arrays.asList(
                 "http://dusurcrafts.com",
+                "https://backend-final-production-4465.up.railway.app",
                 "https://idata.center",
                 "https://ashraf-portfolio-indol.vercel.app",
                 "https://ashraf-portfolio-pi.vercel.app",
