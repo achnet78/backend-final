@@ -22,7 +22,7 @@ public class ConfigClass {
     @Bean
     public JavaMailSender javaMailSender() {
         JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
-        mailSender.setHost("idata.center");
+        mailSender.setHost("mail.idata.center");
         mailSender.setPort(465);
         mailSender.setUsername("info@idata.center");
         mailSender.setPassword(password);
