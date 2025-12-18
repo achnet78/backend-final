@@ -25,7 +25,7 @@ public class ConfigClass {
         mailSender.setHost("idata.center");
         mailSender.setPort(465);
         mailSender.setUsername("info@idata.center");
-        mailSender.setPassword("Info68Info35");
+        mailSender.setPassword(password);
 
         Properties props = mailSender.getJavaMailProperties();
         props.put("mail.transport.protocol", "smtp");
