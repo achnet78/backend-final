@@ -31,6 +31,8 @@ public class ConfigClass {
         props.put("mail.transport.protocol", "smtp");
         props.put("mail.smtp.auth", "true");
         props.put("mail.smtp.ssl.enable", "true");
+        props.put("mail.smtp.starttls.enable", "true"); // ⬅️ مهم جداً
+        props.put("mail.smtp.starttls.required", "true");
         props.put("mail.smtp.ssl.trust", "*");
         props.put("mail.debug", "true");
 
