@@ -17,9 +17,8 @@ public class ContactService {
                 .message(request.getMessage())
                 .build();
 
-        temp.save(c , "Contact");
+        temp.save(c, "Contact");
 
-        // إرسال حسب اللغة
         String lang = request.getLang() != null ? request.getLang().toLowerCase() : "ar";
 
         // تأكيد للمرسل
