@@ -68,11 +68,10 @@ public class SecurityConfig {
                         .requestMatchers("/swagger-ui.html").permitAll()
                         .requestMatchers("/login").permitAll()
                         .requestMatchers("/contact").permitAll()
-                        .requestMatchers("/register/admin").permitAll()
                         .requestMatchers(HttpMethod.POST, "/**").hasRole("ADMIN")
                         .requestMatchers(HttpMethod.PUT, "/**").hasRole("ADMIN")
                         .requestMatchers(HttpMethod.DELETE, "/**").hasRole("ADMIN")
-//                        .requestMatchers("/register/admin").hasRole("ADMIN")//admin only can create admins
+                        .requestMatchers("/register/admin").hasRole("ADMIN")//admin only can create admins
                         .requestMatchers(HttpMethod.GET, "/**").permitAll()
                         .anyRequest().authenticated())
                 .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class)
